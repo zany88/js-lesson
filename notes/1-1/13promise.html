@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+   // var p =new Promise((resolve,reject) => {
+   //     resolve('s1')
+   //     reject('e')
+   //     resolve('s2')
+   // })
+   //  p.then(res=>{
+   //      console.log(res)
+   //  }).catch(res=>{
+   //      console.log(res)
+   //  })
+
+
+   // Promise.resolve(1).then(2).then(Promise.resolve(3).then(console.log))
+   let p  =new Promise((reject)=>{reject(11)});
+   p.then(res=>{
+       console.log(res)
+   }),err=>{
+       console.log(err)
+   }
+
+   p.then(res=>{
+       console.log(res)
+   },err=>{
+       console.log(err)
+   })
+    p.then(res=>{}).catch(err=>{})
+</script>
+</html>
