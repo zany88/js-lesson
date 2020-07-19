@@ -25,9 +25,5 @@
     相对于Loader而言，Plugin的编写就灵活了许多。 webpack在运行的生命周期中会广播出许多事件，Plugin 可以监听这些事件，在合适的时机通过 Webpack 提供的 API 改变输出结果。
 #####
 #####3,使用 Webpack 实现 Vue 项目打包任务
-```javascript
-/**
-* 简易导图 说明文档
-* https://www.processon.com/view/link/5e7acaede4b092510f730621
-* */
-```
+[简易导图](https://www.processon.com/view/link/5e7acaede4b092510f730621)
+[代码](https://github.com/zany88/js-lesson/tree/master/code/2-2)
