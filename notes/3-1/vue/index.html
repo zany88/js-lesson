@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <h5>{{}}</h5>
+    <div>{{msg}}</div>
+
+    <h5>text</h5>
+    <div v-text="msg"></div>
+
+    <h5>html</h5>
+    <div v-html="msg"></div>
+
+    <div v-on:click.stop="clickHandler(111,222,$event)"> 点击</div>
+    <div @click.stop.prevent="clickHandler(111,222,$event)"> 点击</div>
+
+    <!--    <div onclick="alert(11)"> 点击</div>-->
+
+<!--    <h5>model</h5>-->
+<!--    <input type="text" v-model="msg">-->
+<!--    <button ></button>-->
+</div>
+<script src="dep.js"></script>
+<script src="watcher.js"></script>
+<script src="compiler.js"></script>
+<script src="observer.js"></script>
+<script src="vue.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+
+<script>
+    let vm = new Vue({
+        el:'#app',
+        data:{
+            msg:'<h1 style=\'color:red\'>这是一个h1元素内容</h1>',
+            count:100,
+            person:{name:'xx'},
+            dog: {}
+        },
+        methods:{
+            clickHandler (val,val1,e) {
+                // console.log(222)
+                // console.log(val)
+                // console.log(val1)
+                console.log(e)
+                // this.dog.name = 'Trump'
+                // this.$set(this.dog,'name','Trump')
+                // console.log(this.dog)
+                // console.log(this.person)
+                // return 11
+            },
+            clickop(){
+                console.log(333)
+            }
+        }
+    })
+    // console.log(vm.msg)
+</script>
+</body>
+</html>

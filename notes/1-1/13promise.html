@@ -21,18 +21,45 @@
 
 
    // Promise.resolve(1).then(2).then(Promise.resolve(3).then(console.log))
-   let p  =new Promise((reject)=>{reject(11)});
-   p.then(res=>{
-       console.log(res)
-   }),err=>{
-       console.log(err)
-   }
+   // let p  =new Promise((reject)=>{reject(11)});
+   // p.then(res=>{
+   //     console.log(res)
+   // }),err=>{
+   //     console.log(err)
+   // }
+   //
+   // p.then(res=>{
+   //     console.log(res)
+   // },err=>{
+   //     console.log(err)
+   // })
+   //  p.then(res=>{}).catch(err=>{})
 
-   p.then(res=>{
-       console.log(res)
-   },err=>{
-       console.log(err)
+   // const promise1 = new Promise((resolve, reject) => {
+   //     console.log('promise1')
+   //     resolve('resolve1')
+   // })
+   // const promise2 = promise1.then(res => {
+   //     console.log(res)
+   // })
+   // console.log('1', promise1);
+   // console.log('2', promise2);
+
+
+
+   const promise1 = new Promise((resolve, reject) => {
+       setTimeout(() => {
+           resolve('success')
+       }, 1000)
    })
-    p.then(res=>{}).catch(err=>{})
+   const promise2 = promise1.then(() => {
+       throw new Error('error!!!')
+   })
+   console.log('promise1', promise1)
+   console.log('promise2', promise2)
+   setTimeout(() => {
+       console.log('promise1', promise1)
+       console.log('promise2', promise2)
+   }, 2000)
 </script>
 </html>

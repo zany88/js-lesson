@@ -1,0 +1,44 @@
+body{
+    background: #42b983;
+}
+#container{
+    width: 65%;
+}
+.top-head{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top-one{
+    margin-right: 20px;
+}
+.top-left{
+    display: flex;
+    flex-direction: row;
+}
+.col{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex: 1;
+}
+.itemid{
+    width: 20px;
+    margin-right: 40px;
+}
+.itemtitle{
+    width: 200px;
+    margin-right: 20px;
+}
+.item{
+    width: 500px;
+    height: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.cha{
+    flex-grow: 1 ;
+    text-align: right;
+}
