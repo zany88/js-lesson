@@ -1,0 +1,57 @@
+[
+  {
+    "path": "/",
+    "component": "/Users/jpz/WebstormProjects/nuxt-proj/pages/layout",
+    "children": [
+      {
+        "path": "",
+        "name": "home",
+        "component": "/Users/jpz/WebstormProjects/nuxt-proj/pages/home",
+        "_name": "_277a1b52"
+      },
+      {
+        "path": "/login",
+        "name": "login",
+        "component": "/Users/jpz/WebstormProjects/nuxt-proj/pages/login",
+        "_name": "_c758be1e"
+      },
+      {
+        "path": "/register",
+        "name": "register",
+        "component": "/Users/jpz/WebstormProjects/nuxt-proj/pages/login",
+        "_name": "_c758be1e"
+      },
+      {
+        "path": "/profile/:username",
+        "name": "profile",
+        "component": "/Users/jpz/WebstormProjects/nuxt-proj/pages/profile",
+        "_name": "_a1d40d9e"
+      },
+      {
+        "path": "/setting",
+        "name": "setting",
+        "component": "/Users/jpz/WebstormProjects/nuxt-proj/pages/setting",
+        "_name": "_37e67dd8"
+      },
+      {
+        "path": "/editor",
+        "name": "editor",
+        "component": "/Users/jpz/WebstormProjects/nuxt-proj/pages/editor",
+        "_name": "_3cd6be36"
+      },
+      {
+        "path": "/article/:slug",
+        "name": "article",
+        "component": "/Users/jpz/WebstormProjects/nuxt-proj/pages/article",
+        "_name": "_d43f8704"
+      },
+      {
+        "path": "/other",
+        "name": "other",
+        "component": "/Users/jpz/WebstormProjects/nuxt-proj/pages",
+        "_name": "_dcc88cd2"
+      }
+    ],
+    "_name": "_25390abc"
+  }
+]
